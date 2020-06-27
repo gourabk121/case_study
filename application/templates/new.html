@@ -1,0 +1,18 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+
+<h1>
+    your id is {{ current_user.id }} and you are a {{ current_user.designation }}
+</h1>
+
+
+
+<h3>
+    <a href="/logout">Logout</a>
+</h3>
+   
+    
+
+
+{% endblock %}

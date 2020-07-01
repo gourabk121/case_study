@@ -1,0 +1,36 @@
+{% extends "layouts.html" %}
+{% block content %}
+<div class="row">
+   <div class="col-md-12 text-center">
+      <h2>Patient Deleted</h2>
+      <table class="table table-hover">
+         <tr>
+            <td>
+               Patient SSN ID
+            </td>
+            <td>
+               <input type="hidden" name="patient_ssn_id" value= {{patient_delete.patient_ssn_id}}>{{patient_delete.patient_ssn_id}}<br>
+            </td>
+        </tr>
+         <tr>
+            <td>Patient Name:</td>
+            <td>
+               <input type="hidden" name="patient_name" value= {{patient_delete.patient_name}}>{{patient_delete.patient_name}}<br>
+            </td>
+         </tr>
+         <tr>
+            <td>Patient Age:</td>
+            <td>
+               <input type="hidden" name="patient_age" value= {{patient_delete.patient_age}}>{{patient_delete.patient_age}}<br>
+            </td>
+         </tr>
+         <tr>
+            <td>Patient Age:</td>
+            <td>
+               <input type="hidden" name="patient_doa" value= {{patient_delete.patient_doa}}>{{patient_delete.patient_doa}}<br>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+{% endblock %}
